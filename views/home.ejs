@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html> 
+<title>Stripe Payment Demo</title> 
+<body> 
+    
+    <h3>Payment Gateway </h3> 
+    <form action="payment" method="POST"> 
+    <script
+        src="//checkout.stripe.com/v2/checkout.js"
+        class="stripe-button"
+        data-key="<%= key %>" 
+        data-amount="" 
+        data-currency="usd" 
+        data-name="Stripe Payment Gateway" 
+        data-description="" 
+        data-locale="auto" > 
+        </script> 
+    </form> 
+    <br>
+    <form action="paywithcash" method="POST"> 
+        <button type="submit"> Pay WIth Cash</button>
+        </form> 
+</body> 
+</html>
